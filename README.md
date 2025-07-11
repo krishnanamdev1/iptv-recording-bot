@@ -1,6 +1,4 @@
-Yeh raha aapke GitHub project ke liye **professional-style `README.md` file**, jo **Termux setup**, **dependencies installation**, aur **requirements.txt usage** ke sath diya gaya hai:
 
----
 
 ### 📄 `README.md`
 
