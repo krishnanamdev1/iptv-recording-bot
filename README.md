@@ -30,14 +30,14 @@ Follow these steps carefully to run the bot in **Termux (Android)**:
 ### 1. Install Required Termux Packages
 
 ```bash
-pkg update -y && pkg upgrade -y
-pkg install -y python clang ffmpeg git wget zip unzip libffi
+y && pkg upgrade -ypkg update -
 ````
 
 ### 2. Upgrade pip
 
 ```bash
-pip install --upgrade pip
+
+pkg install -y python clang ffmpeg git wget zip unzip libffi
 ```
 
 ### 3. Clone This Repository
