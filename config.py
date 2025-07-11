@@ -37,20 +37,5 @@ M3U_PLAYLISTS = [url.strip() for url in raw_playlists.split(',')] if raw_playlis
 if not M3U_PLAYLISTS:
     print("Warning: M3U_PLAYLISTS is not set. The bot may not have any channels to record.")
 
-# --- Verification ---
-VERIFICATION_BASE_URL = os.getenv("VERIFICATION_BASE_URL", "https://vplinks.com/api?api_key=YOUR_API_KEY&url=")
-BOT_NAME = os.getenv("BOT_NAME", "iptvrecording_bot")
-VERIFICATION_REWARD_MINUTES = int(os.getenv("VERIFICATION_REWARD_MINUTES", 10))
-
-# --- JioTV Configuration ---
-JIO_TV_CONFIG = {
-    'mac': os.getenv("JIO_MAC", "00:1A:79:F1:2F:D3"),
-    'device_id': os.getenv("JIO_DEVICE_ID", "551D79E2424A4EB2B79455A20C045D05D"),
-    'serial_number': os.getenv("JIO_SERIAL_NUMBER", "36DA041E6358E")
-}
-
-# --- In-memory State (should not be in config) ---
-# These are runtime variables and should be managed within your application logic, not in a config file.
-# Example: Create a state management module or handle them in your main script.
 VERIFICATION_LINKS = {}
 ACTIVE_RECORDINGS = {}
