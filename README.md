@@ -2,7 +2,7 @@
 
 ### 📄 `README.md`
 
-````markdown
+markdown
 # 🎥 Telegram IPTV Recording Bot
 
 This is a professional-grade Telegram bot for recording IPTV streams using **FFmpeg** and controlling everything via **Telegram commands**.
@@ -30,10 +30,10 @@ Follow these steps carefully to run the bot in **Termux (Android)**:
 ### 1. Install Required Termux Packages
 
 ```bash
-y && pkg upgrade -ypkg update -
+y && pkg upgrade -ypkg update -  
 ````
 
-### 2. Upgrade pip
+### 2. install pkg
 
 ```bash
 
@@ -84,8 +84,9 @@ Create a `.env` file or `config.py` with the following variables:
 API_ID=your_api_id
 API_HASH=your_api_hash
 BOT_TOKEN=your_bot_token
-SESSION_NAME=your_userbot_session
+LOG_CHANNEL_ID=-100XXXXXXXXXX
 STORE_CHANNEL_ID=-100XXXXXXXXXX
+ADMIN_ID=123456456
 ```
 
 > 💡 Get `API_ID` and `API_HASH` from [https://my.telegram.org](https://my.telegram.org)
@@ -99,9 +100,6 @@ STORE_CHANNEL_ID=-100XXXXXXXXXX
 python main.py
 ```
 
-Or run using `flask` if using webhook-based structure.
-
----
 
 ## 🤝 Contributing
 
