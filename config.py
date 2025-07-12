@@ -37,5 +37,10 @@ M3U_PLAYLISTS = [url.strip() for url in raw_playlists.split(',')] if raw_playlis
 if not M3U_PLAYLISTS:
     print("Warning: M3U_PLAYLISTS is not set. The bot may not have any channels to record.")
 
+# --- Verification ---
+VERIFICATION_BASE_URL = os.getenv("VERIFICATION_BASE_URL", "https://vplinks.com/api?api_key=YOUR_API_KEY&url=")
+BOT_NAME = os.getenv("BOT_NAME", "iptvrecording_bot")
+VERIFICATION_REWARD_MINUTES = int(os.getenv("VERIFICATION_REWARD_MINUTES", 10))
+
 VERIFICATION_LINKS = {}
 ACTIVE_RECORDINGS = {}
