@@ -78,7 +78,7 @@ aiohttp
 
 ## 🔑 Environment Variables
 
-Create a `.env` file or `config.py` with the following variables:
+Edit  `.env` file with the following variables:
 
 ```env
 API_ID=your_api_id
