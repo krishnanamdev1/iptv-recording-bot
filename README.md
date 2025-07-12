@@ -30,7 +30,7 @@ Follow these steps carefully to run the bot in **Termux (Android)**:
 ### 1. Install Required Termux Packages
 
 ```bash
-y && pkg upgrade -ypkg update -  
+pkg update -y && pkg upgrade -y   
 ````
 
 ### 2. install pkg
